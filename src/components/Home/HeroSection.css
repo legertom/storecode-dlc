@@ -1,0 +1,26 @@
+/* Hero section styles */
+.hero-section {
+    min-height: 100vh;
+    background-color: #6ac865;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    background-image: url('path/to/parallax-background-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
