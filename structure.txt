@@ -1,0 +1,116 @@
+Project Description:
+A simple store for downloadable content
+
+Package.json:
+{
+  "name": "storecode-dlc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@paypal/react-paypal-js": "^7.8.3",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0-beta.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "vite": "^4.3.0"
+  }
+}
+
+File Structure:
+project-root/
+└─ .DS_Store
+└─ .eslintrc.cjs
+└─ .gitignore
+└─ index.html
+└─ package-lock.json
+└─ package.json
+├─ public/
+│  └─ vite.svg
+├─ server/
+│  └─ .env
+│  ├─ controllers/
+│  │  └─ digitalGoodController.js
+│  └─ index.js
+│  ├─ models/
+│  │  └─ DigitalGood.js
+│  │  └─ Order.js
+│  │  └─ User.js
+│  ├─ routes/
+│  │  └─ cartRoutes.js
+│  │  └─ digitalGoodRoutes.js
+│  │  └─ orderRoutes.js
+│  │  └─ userRoutes.js
+├─ src/
+│  └─ .DS_Store
+│  └─ App.css
+│  └─ App.jsx
+│  ├─ assets/
+│  │  ├─ images/
+│  │  │  └─ Screenshot 2023-04-30 at 1.55.34 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 2.04.20 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 2.04.28 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 2.04.46 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 2.05.28 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 2.05.34 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 2.05.48 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 2.06.03 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 2.06.14 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 7.11.29 PM.png
+│  │  │  └─ Screenshot 2023-04-30 at 7.11.53 PM.png
+│  │  │  └─ storecode-logo.svg
+│  │  │  └─ storecode-logo2.svg
+│  │  └─ react.svg
+│  ├─ components/
+│  │  └─ AccountDashboard.jsx
+│  │  └─ AccountEdit.jsx
+│  │  └─ Checkout.jsx
+│  │  └─ CreateDigitalGood.jsx
+│  │  └─ DigitalGoodDetails.jsx
+│  │  └─ DigitalGoodsListing.jsx
+│  │  ├─ Home/
+│  │  │  └─ Contact.jsx
+│  │  │  └─ Features.jsx
+│  │  │  └─ Footer.jsx
+│  │  │  └─ HeroSection.css
+│  │  │  └─ HeroSection.jsx
+│  │  │  └─ Pricing.jsx
+│  │  │  └─ WhyChoose.jsx
+│  │  └─ HomePage.jsx
+│  │  └─ Login.jsx
+│  │  ├─ Navbar/
+│  │  │  └─ Navbar.css
+│  │  │  └─ Navbar.jsx
+│  │  └─ OrderConfirmation.jsx
+│  │  └─ OrderHistory.jsx
+│  │  └─ PasswordReset.jsx
+│  │  └─ PasswordResetRequest.jsx
+│  │  └─ Register.jsx
+│  │  └─ ShoppingCart.jsx
+│  ├─ hooks/
+│  │  └─ useParallax.js
+│  └─ index.css
+│  └─ main.jsx
+└─ structure.txt
+└─ summarize_project.mjs
+└─ vite.config.js
